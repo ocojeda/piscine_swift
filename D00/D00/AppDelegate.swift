@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  D00
+//  d00
 //
-//  Created by octavio ojeda on 03/01/2019.
-//  Copyright © 2019 octavio ojeda. All rights reserved.
+//  Created by Octavio orlando OJEDA ARONIZ on 1/7/19.
+//  Copyright © 2019 Octavio orlando OJEDA ARONIZ. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
