@@ -1,17 +1,33 @@
-//
-//  main.swift
-//  ex00
-//
-//  Created by Octavio orlando OJEDA ARONIZ on 1/8/19.
-//  Copyright © 2019 Octavio orlando OJEDA ARONIZ. All rights reserved.
-//
 
 var card1 = Card(color: Color.Heart, value: Value.one)
 
-print (card1.description)
+print ("constructor called with 2 parameters", card1.description)
 
 var card2 = Card(color: Color.Spade, value: Value.five)
 
-print (card2.description)
+print ("constructor called with 2 parameters", card2.description)
 
-print (card1 == card2)
+if card1 == card2
+{
+    print ("are equal a et b")
+}
+else {
+    print("a et b are not equal")
+}
+
+
+card1 = Card(color: Color.Heart, value: Value.one)
+
+print ("constructor called with 2 parameters", card1.description)
+
+card2 = Card(color: Color.Heart, value: Value.one)
+
+print ("constructor called with 2 parameters", card2.description)
+
+if card1 == card2
+{
+    print ("are equal a et b")
+}
+else {
+    print("a et b are not equal")
+}

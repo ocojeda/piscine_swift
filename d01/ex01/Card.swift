@@ -1,4 +1,6 @@
 
+import Foundation
+
 class Card : NSObject {
 
    var value : Value
@@ -10,7 +12,7 @@ class Card : NSObject {
    }
 
    override var description : String {
-       let str = "hello im the card : " + self.color.rawValue + " " + String(describing: self.value)
+       let str = "hello the description of : " + self.color.rawValue + " " + String(describing: self.value)
        return str
    }
 
