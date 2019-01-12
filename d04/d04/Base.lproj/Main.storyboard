@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="d04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="42D-df-XXg">
+                                <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBJ-SW-dGV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Twitter App" id="dzQ-1L-065"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ecole 42" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5k-oV-bdd">
+                                <rect key="frame" x="0.0" y="44" width="188" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-Lq-Qiz">
+                                <rect key="frame" x="196" y="44" width="187.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ss:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="wkd-yq-uar"/>
+                                    <action selector="text_end:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aoD-JG-mAR"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4N-Lq-Qiz" firstAttribute="leading" secondItem="C5k-oV-bdd" secondAttribute="trailing" constant="8" symbolic="YES" id="BMw-0r-yIo"/>
+                            <constraint firstItem="w4N-Lq-Qiz" firstAttribute="top" secondItem="C5k-oV-bdd" secondAttribute="top" id="D9G-0g-hwW"/>
+                            <constraint firstItem="w4N-Lq-Qiz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="EEQ-bz-E3p"/>
+                            <constraint firstItem="uBJ-SW-dGV" firstAttribute="leading" secondItem="C5k-oV-bdd" secondAttribute="leading" id="FdP-Of-eMg"/>
+                            <constraint firstItem="C5k-oV-bdd" firstAttribute="top" secondItem="uBJ-SW-dGV" secondAttribute="bottom" id="IVh-To-cFE"/>
+                            <constraint firstItem="uBJ-SW-dGV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IvU-Rb-tKt"/>
+                            <constraint firstItem="42D-df-XXg" firstAttribute="trailing" secondItem="uBJ-SW-dGV" secondAttribute="trailing" id="Mee-lO-HIF"/>
+                            <constraint firstAttribute="trailing" secondItem="uBJ-SW-dGV" secondAttribute="trailing" id="Rep-rw-kFu"/>
+                            <constraint firstItem="C5k-oV-bdd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="Tu0-ML-qtP"/>
+                            <constraint firstItem="42D-df-XXg" firstAttribute="top" secondItem="C5k-oV-bdd" secondAttribute="bottom" constant="8" symbolic="YES" id="Y58-OT-M49"/>
+                            <constraint firstItem="42D-df-XXg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Y9x-69-9gN"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C5k-oV-bdd" secondAttribute="trailing" constant="20" symbolic="YES" id="h29-uw-cfM"/>
+                            <constraint firstItem="uBJ-SW-dGV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="u6R-E6-yIL"/>
+                            <constraint firstItem="C5k-oV-bdd" firstAttribute="leading" secondItem="42D-df-XXg" secondAttribute="leading" id="zL3-xW-B0z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label_search" destination="C5k-oV-bdd" id="irC-br-Du8"/>
+                        <outlet property="tableView" destination="42D-df-XXg" id="bhx-ae-oxb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
